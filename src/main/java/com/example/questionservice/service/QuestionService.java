@@ -17,7 +17,7 @@ public class QuestionService {
     public String addQuestion(Question question) {
 
         questionDAO.save(question);
-        return "success";
+        return "successfully saved";
     }
 
     public List<Question> getByCategory(String category) {
