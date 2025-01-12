@@ -37,7 +37,7 @@ public class QuizService {
         List<Question> questionList=quiz.get().getQuestions();
         List<QuestionWrapper> questionWrapperList=new ArrayList<>();
         for(Question question:questionList) {
-            QuestionWrapper questionWrapper=new QuestionWrapper(question.getId(),question.getQuestionTitle(),question.getCategory(),question.getOption1(),question.getOption2(),question.getOption3(),question.getOption4(),question.getDifficultlevel());
+            QuestionWrapper questionWrapper=new QuestionWrapper(question.getId(),question.getQuestionTitle(),question.getCategory(),question.getOption1(),question.getOption2(),question.getOption3(),question.getOption4());
             questionWrapperList.add(questionWrapper);
         }
         return new ResponseEntity<>(questionWrapperList, HttpStatus.OK);

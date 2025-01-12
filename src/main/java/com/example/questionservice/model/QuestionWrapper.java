@@ -15,14 +15,12 @@ public class QuestionWrapper {
     public int id;
     public String category;
     public String questionTitle;
-    public String difficultlevel;
     public String option1;
 
-    public QuestionWrapper(int id, String category, String questionTitle, String difficultlevel, String option1, String option2, String option3, String option4) {
+    public QuestionWrapper(int id, String category, String questionTitle, String option1, String option2, String option3, String option4) {
         this.id = id;
         this.category = category;
         this.questionTitle = questionTitle;
-        this.difficultlevel = difficultlevel;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
