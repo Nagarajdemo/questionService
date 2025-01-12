@@ -8,10 +8,7 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-@Entity
 public class QuestionWrapper {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
     public String category;
     public String questionTitle;
